@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body {
+    
+    background-color:rgb(255, 255, 255);
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -24,7 +29,12 @@ header{
     font-family: 'Fira Code', monospace;
     font-weight: 300;
     transition: color 1s linear;
-   }
+}
+
+
+ion-icon {
+    vertical-align: middle;
+}
 
 .hero-textbox h4{
     font-family: 'Fira Code', monospace;
@@ -34,6 +44,31 @@ header{
 .hero-textbox h1:hover {
     color: #D91E18;
 }
+
+
+/*--------------ABOUT ME*--------------  */
+
+.section-main {
+    width: 100%;
+    height: 70vh;
+}
+
+.row {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+
 .section-main h2{
     font-family: 'Fira Code', monospace;
     color:#000;
@@ -44,99 +79,230 @@ header{
 .section-main h2:hover{
       color: #D91E18;
 }
+
 .section-main h3{
     font-family: 'Fira Code', monospace;
     color:#000000;
     font-weight: 400;
 }
 
-body {
-    
-    background-color:rgb(255, 255, 255);
-}
-.section-class {
-   text-align: right;
-
-}
-
-.row {
-    width: 100%;
-    height: 50vh;
-}
-
 .profileImage{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     float: left;
-    padding: 25px;
-    width: 15%;
+    /* padding: 25px; */
+    width: 18%;
     
 }
+
 img {
     width: 100%;
     float: left;
     border-radius: 50%;
 }
+
 .grid-item{
     height: 100%;
-    margin-top: 25px;
-    padding: 5px;
-    width: 80%;
+    /* margin-top: 25px; */
+    /* padding: 5px; */
+    width: 75%;
     float: right;
-    text-align: justify;
+    text-align: left;
 }
 
 .grid-item h2 {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.0em;
+    font-size: 200%;
+    text-align: center;
 }
 
 .grid-item h3 {
-    letter-spacing: 0.15em;
-}
-.section-secondary{
-    height: 30vh;
-    letter-spacing:0.5em;
-
+    letter-spacing: 0.0em;
+    font-size: 150%;
+    text-align: center;
 }
 
-.icon {
-    font-size: 300%;
-    float: left;
+/* ----------------CONTACT ME---------------- */
+
+.row2 {
+    width: 80%;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .secondary-hero{
-    float: left;
-    width: 80%;
+    float: right;
+    width: 20%;
+}
+
+.grid-item:last-child{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.secondary-icons {
-    margin-top: 6px;
-    width: 20%;
-    float: right;
+.hero {
+    float: left;
+    align-self: center;
+    
 }
-.secondary-hero p{
-    margin-top: 12px;
-    font-size: 170%;
+
+.hero p {
+    font-size: 200%;
     color: #000;
     font-family: 'Fira Code',monospace;
-    transition: color 1s linear;
     
-    
+} 
+
+.secondary-icons {
+    width: 20%;
+    align-self: center;
 }
 
-
-.row2 p:hover{
-    color: #D91E18;
-}
-
-.row2 a {
+.icon a {
     text-decoration: none;
     color: #000;
 }
 
-.row2 {
-    width: 70%;
-    height: 30%;
-    margin-left: 20%;
-    margin-top: 10%;
+
+
+.icon {
+    font-size: 300%;
+    float: left;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .hero-textbox {
+        padding: 10%;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+    }
+
+    .hero-textbox h1 {
+        font-family: 'Fira Code', monospace;
+        font-weight: 300;
+        transition: none;
+        font-size: 200%;
+    }
+
+    .hero-textbox h1:hover {
+        color: #ffffff;
+    }
+
+    .hero-textbox h4{
+        font-family: 'Fira Code', monospace;
+        font-weight: 100;
+        font-size: 130%;
+        margin-top: 10%;
+    }
+
+    .hero-textbox h1:hover {
+        color: #ffffff;
+    }
+
+
+    /* ----------------ABOUT ME---------------- */
+    .section-main {
+        width: 100%;
+        height: 100vh;
+        
+    }
+
+    .row {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .row .profileImage{
+        align-self: center;
+        width: 50%;
+        margin-top: 20%;
+    }
+
+    .row img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .grid-item{
+        align-self: center;
+        width: 80%;
+        text-align: center;
+    }
+
+    .grid-item h2 {
+        letter-spacing: 0.1em;
+        font-family: 'Fira Code', monospace;
+        color:#000;
+        font-weight: 700;
+        transition: none;
+    }
+
+    .grid-item h2:hover{
+        color: #000;
+        font-family: 'Fira Code', monospace;
+        color:#000000;
+        font-weight: 400;
+    }
+
+
+    .grid-item h3 {
+        letter-spacing: 0.1em;
+        font-size: medium;
+    }
+    
+    /* ----------------CONTACT ME---------------- */
+    .row2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    .row2 .secondary-hero{
+        align-self: center;
+    }
+
+    .secondary-hero p{
+        font-size: 140%;
+        color: #000;
+        font-family: 'Fira Code',monospace;
+        transition: none;
+    }
+
+    .secondary-hero p:hover{
+        color: #000;
+    }
+
+    .secondary-icons {
+        margin-top: 6px;
+        width: fit-content;
+        align-self: center;
+        align-content: space-between;
+        /* border: 1px solid black; */
+
+    }
+
+    .icon {
+        font-size: 300%;
+        /* align-self: center; */
+    }
+
+
+    
+
+    .icon a {
+        text-decoration: none;
+        color: #000;
+    }
+
 }
